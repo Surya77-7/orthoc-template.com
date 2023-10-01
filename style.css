@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu',sans-serif;
+}
+/* !nav-block strats */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://themewagon.github.io/orthoc/images/hero-bg.png");
+    object-fit: cover;
+    position: static;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header div{
+    width: 75%;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+header div aside:first-child{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header div aside:first-child h2{
+    /* flex-basis: 20%; */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+header div aside:first-child ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+header div aside:first-child ul li{
+    margin-left: 50px
+}
+header div aside:first-child ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 550;
+    transition: all 0.4s;
+}
+header div aside:first-child ul li a:hover{
+    color: #ffffff8a;
+    transition: all 0.4s;
+}
+header div aside:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 500px;
+    animation-name: divContainer;
+    animation-timing-function: ease ;
+    position: relative;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+@keyframes divContainer {
+
+    0%{
+        left: 500px;
+        opacity: 0;
+        transition: all 0.1s;
+    }
+    100%{
+        left: 0px;
+        opacity: 1;
+        transition: all 0.1s;
+    }
+    
+}
+header div aside:last-child section{
+    width: 700px;
+    height: 300px;
+    color: #fff ;
+}
+header div aside:last-child section h2{
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+header div aside:last-child section p{
+    margin-bottom: 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 20px;
+}
+header div aside:last-child section button{
+    padding: 14px 50px;
+    border-radius: 5px;
+    border: none;
+    color: #7ed6b2;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+header div aside:last-child section button:hover{
+    background-color: #3DAE9A;
+    border: 1px solid #ffffffe7;
+    color: #ffffffeb;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+/* nav-block ends */
+/* !!!FIrst footer */
+#ourdept{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+#ourdept section{
+    width: 75%;
+    height: 70vh;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+}
+#ourdept section div{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+#ourdept section div:first-child{
+    display: flex;
+    /* justify-content: center; */
+    flex-basis: 20%;
+}
+#ourdept section div:first-child aside {
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+#ourdept section div:first-child aside h1{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#ourdept section div:first-child aside p{
+    margin-bottom: 35px;
+    word-spacing:2;
+    font-weight: 300;
+    font-size: 15px;
+}
+#ourdept section div:nth-child(2){
+    display: flex;
+    flex-basis: 50%;
+}
+#ourdept section div:nth-child(2) aside{
+    width: 300px;
+    height: 200px;
+    /* background-color: rgb(248, 250, 250); */
+    margin-left:4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ourdept section div:nth-child(2) aside article{
+    width: 100px;
+    height: 100px;
+    background: #62D2A2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#ourdept section div:nth-child(2) aside article i{
+    font-size: 45px;
+    color: #ffffff;
+}
+#ourdept section div:nth-child(2) aside h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#ourdept section div:nth-child(2) aside p{
+    margin-right: 10px;
+    text-align: center;
+    color:#000000ba;
+    font-size: 18x;
+    font-weight: 500;
+    line-height: 20px;
+}
+#ourdept section div:last-child button{
+    margin-top: 40px;
+    padding: 14px 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #62D2A2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+}
+#ourdept section div:last-child button:hover{
+    background-color: #fff;
+    color: #62D2A2;
+    border: 1px solid #62D2A2;
+    cursor: pointer;
+}
+/* First footer ends */
+
+
+/* About block starts */
+#aboutBlock{
+    width: 100%;
+    height: 50vh;
+    margin:70px 0px 100px 0px;
+}
+#aboutBlock div{
+    width: 75%;
+    height: inherit;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+#aboutBlock div aside:first-child{
+    width: 50%;
+    height: inherit;
+}
+#aboutBlock div aside:first-child img{
+    float: right;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    border-radius:15px;
+}
+#aboutBlock div aside:last-child{
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: 25px;
+}
+#aboutBlock div aside:last-child h2{
+    margin-top:60px ;
+    font-size: 28px;
+    flex-basis:50px;
+}
+#aboutBlock div aside:last-child p{
+    text-align: justify;
+    font-weight: 300;
+    font-size: 15px;
+    /* letter-spacing: 1px; */
+    line-height: 25px;
+    font-weight: 400;
+}
+#aboutBlock div aside:last-child button{
+    /* flex-basis: 40p; */
+    margin-top: 25px;
+    width: 180px;
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #62D2A2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+}
+#aboutBlock div aside:last-child button:hover{
+    background-color: #fff;
+    color: #62D2A2;
+    border: 1px solid #62D2A2;
+    cursor: pointer;
+}
+/* About block ends */
+/* Our Doctors block strats */
+#ourDoct{
+    width: 100%;
+    height: 120vh;
+    background-color: #178066;
+    color: #FFFFFF;
+}
+#ourDoct div{
+    width: 75%;
+    height: 100vh;
+    margin:0px auto;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+}           
+#ourDoct div aside:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 140px;
+}
+#ourDoct div aside:first-child h1{
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+#ourDoct div aside:first-child p{
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+#ourDoct div aside:nth-child(2){
+    width: 100%;
+    display: flex;
+    flex-basis: 475px;
+}
+#ourDoct div aside:nth-child(2) main{
+    width: inherit;
+    display: flex;
+    background-color: #fff;
+    margin-right: 30px;
+    margin-left: 0px;
+    border-radius:10px ;
+}
+#ourDoct div aside:nth-child(2) main article{
+    width: inherit;
+    height: 500px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;  
+    border-radius: 10px;
+}
+#ourDoct div aside:nth-child(2) main article img{
+    width: inherit;
+    height: 400px;
+    object-fit: cover;
+    border-radius:10px 10px 0px 0px;
+}
+#ourDoct div aside:nth-child(2) main article nav{
+    position: relative;
+    width: 170px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity:0;
+}
+#ourDoct div aside:nth-child(2) main article nav a i{
+    font-size: 16px;
+    color: #178066;
+}
+#ourDoct div aside main article:hover nav{
+    transition: all 0.4s;
+    opacity: 1;
+    top: -19px;
+} 
+#ourDoct div aside:nth-child(2) main article h3{
+    font-weight: 400;
+    letter-spacing: 1;
+    position:relative;
+    color: #000000;
+    bottom:25px;
+}
+#ourDoct div aside:nth-child(2) main article h6{
+    font-weight: 400;
+    font-size: 15px;
+    position:relative;
+    color: #000000;
+    bottom:15px;
+}
+ #ourDoct div aside:last-child{
+    width: 100%;
+    /* height: inherit; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    /* height: 20vh; */
+
+ }#ourDoct div aside:last-child button{
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5cc0a7;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+ }
+ #ourDoct div aside:last-child button:hover{
+    transition: all 0.4s;
+    background-color: #fff;
+    color: #62D2A2;
+    border: 1px solid #62D2A2;
+    cursor: pointer;
+ } 
+
+/* Our Doctors block ends */
+
+
+
+ /* getInTouch strats */
+ #getInTouch{
+    width: 100%;
+    height: 80vh;
+    margin-top: 2px;
+ }
+#getInTouch div{
+    position: relative;
+    top: 10vh;
+    height: 60vh;
+}
+#getInTouch div aside{
+    width: 75%;
+    /* height: 70vh; */
+    margin: 0px auto;
+}
+#getInTouch div aside:first-child h2{
+    font-size: 32px;
+    height: 7vh;
+}
+#getInTouch div aside:last-child{
+    display: flex;
+    height: 53vh;
+}
+#getInTouch div aside:last-child article:first-child{
+    flex-basis: 50%;
+}
+#getInTouch div aside:last-child article:first-child form nav .front{ 
+   background-color: #eeee;
+   border: none;
+   padding: 18px;
+   margin: 7px 0px 7px 0px;
+   width: 100%;
+   border-radius: 5px;
+}
+#getInTouch div aside:last-child article:first-child form nav .front:focus{
+    border: none;
+    outline: none;
+}
+#getInTouch div aside:last-child article:first-child form nav .front1{
+    width: 49%;
+}
+#getInTouch div aside:last-child article:first-child form nav .front2{
+    width: 49%;
+}
+#getInTouch div aside:last-child article:first-child form nav .front4{
+    padding: 70px;
+    margin-bottom: 20px;
+}
+#getInTouch div aside:last-child article:first-child button{
+    width: 100%;
+    padding: 15px;
+    background-color: #1FAB89;
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+#getInTouch div aside:last-child article:first-child button:hover{
+    background-color: #fff;
+    color: #1FAB89;
+    border: 1px solid #1FAB89;
+    transition: all 0.4s;
+}
+#getInTouch div aside:last-child article:last-child{
+    margin-left: 30px;
+    flex-basis: 50%;
+    height: 53vh;
+    
+}
+#getInTouch div aside:last-child article:last-child img{
+    width: 100%;
+    height: 51vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* GetIn touch block ends */
+
+/* TESTIMONIAL block starts */
+#testmonial{
+    width: 100%;
+    height: 70vh;
+    margin-top: 20px;
+}
+
+#testmonial div{
+    width: 75%;
+    height: 70vh;
+    margin:0px auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+#testmonial div aside:first-child{
+    margin-bottom: 45px;
+}
+#testmonial div aside:first-child h1{
+    font-size: 28px;
+}
+#testmonial div aside:nth-child(2){
+    width: 100%;
+    display: flex;
+}
+#testmonial div aside:nth-child(2) article{
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#testmonial div aside:nth-child(2) article img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#testmonial div aside:nth-child(2) article h2{
+    margin-bottom: 10px;
+    color: #62D2A2;
+    font-weight: 400;
+    font-size: 20px;
+}
+#testmonial div aside:nth-child(2) article p{
+    margin-bottom: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+#testmonial div aside:last-child{
+   margin-top: 50px;
+}
+#testmonial div aside:last-child button{
+    padding: 15px;
+    background-color: #62D2A2;
+    border: none;
+    border-radius: 5px;    
+    transition: all 0.4s;
+}
+#testmonial div aside:last-child button:hover{
+    background-color: #1ca482ce;
+    transition: all 0.4s;
+}
+/* TESTIMONIAL block ends */
+
+
+
+/* Footer block starts */
+#footerlinks{
+    width: 100%;
+    height: 60vh;
+    background-color: #178066;
+    margin-top: 50px;
+}
+
+#footerlinks div{
+    width: 75%;
+    height: inherit;
+    margin: 0px auto;
+}
+#footerlinks div article{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}    
+#footerlinks div article aside{
+    /* width: 100%; */
+    margin-top: 8vh;
+    /* background-color: #fff; */
+    display: flex;
+    /* flex-basis: 24%; */
+    flex-direction: row;
+    height: 30vh;
+    margin-right: 1%;
+}
+#footerlinks div article aside h2{
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+#footerlinks div article aside:first-child{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 23%;
+}
+
+#footerlinks div article aside:first-child a{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 18px;
+    transition: all 0.4s;
+}
+#footerlinks div article aside:first-child a:hover{
+    transition: all 0.4s;
+    color: #7fa299;
+}
+#footerlinks div article aside:first-child .sys{
+
+    flex-direction: row;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+#footerlinks div article aside:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    flex-basis: 24%;
+    margin-right: 5%;
+}
+#footerlinks div article aside:nth-child(2) p{
+    line-height: 25px;
+    font-weight: 400;
+}
+#footerlinks div article aside:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+}
+#footerlinks div article aside:nth-child(3) span{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#footerlinks div article aside:nth-child(3) span a {
+    margin-right: 8%;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s;
+}
+#footerlinks div article aside:nth-child(3) span a:hover{
+    transition: all 0.4s;
+    color: #7fa299;
+}
+#footerlinks div article aside:last-child{
+   justify-content: stretch;
+   align-items: stretch;
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;   
+}
+#footerlinks div article aside:last-child main{
+    display: flex;
+    flex-direction: column;
+}
+#footerlinks div article aside:last-child main form input{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+}
+#footerlinks div article aside:last-child main form input:focus{
+    outline: none;
+}
+#footerlinks div article aside:last-child main form input::placeholder{
+    font-size:14px;
+}
+#footerlinks div article aside:last-child main button{
+    padding: 14px;
+    color: #fff;
+    background-color: #62D2A2;
+    border: none;
+    font-size: 16px;
+    border-radius: 7px;
+    transition: all 0.4s;
+}
+#footerlinks div article aside:last-child main button:hover{
+    color: #9abdae;
+    transition: all 0.4s;
+    background-color: #178066;
+    border: 1px solid #fff;
+}
+#footerlinks div nav{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    align-items: center;
+}
+#footerlinks div nav p:last-child{
+    margin-top: 25px;
+    font-size: 15px;
+}
+/*footer block ends */
